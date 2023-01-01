@@ -1,0 +1,96 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+---
+
+<Layout title="Vivian, The Enby Witch">
+	<main>
+		<h1><span class="text-gradient">Vivian</span>, The Enby Witch</h1>
+		<subtitle>The Interdisciplinary <span class="lesbian text-gradient">Lesbian</span></subtitle>
+		<p class="instructions">
+			I'm an Unreal Engine game developer. I specialize in First Person Animation, but I am also a bit of a UE generalist.
+		</p>
+		<h3>Projects I've worked on</h3>
+		<ul role="list" class="link-card-grid">
+			<Card
+				href="https://www.splashdamage.com/"
+				title="Unannounced SD Game"
+				body="I've been at Splash Damage since September 2022 working as an Animation Programmer. My role is to implement animations in Unreal and make them work within the game."
+			/>
+			<Card
+				href="https://reikongames.com/"
+				title="Final Form"
+				body="I've worked on this project at Reikon Games from 2019 to 2022. I've worked on the first person animations and implemented them into the Unreal Engine."
+			/>
+			<!--<Card
+				href="https://astro.build/integrations/"
+				title="Integrations"
+				body="Supercharge your project with new frameworks and libraries."
+			/>
+			<Card
+				href="https://astro.build/themes/"
+				title="Themes"
+				body="Explore a galaxy of community-built starter themes."
+			/>
+			<Card
+				href="https://astro.build/chat/"
+				title="Community"
+				body="Come say hi to our amazing Discord community. ❤️"
+			/>-->
+		</ul>
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1.5rem;
+		max-width: 60ch;
+	}
+	h1 {
+		font-size: 3rem;
+		font-weight: 800;
+		margin: 0;
+	}
+	subtitle {
+		color: #aaa;
+		font-weight: 800;
+	}
+	.lesbian {
+		background-image: linear-gradient(45deg, #d52d00 0%, #d52d00 20%, #ff9a56 20%, #ff9a56 40%, #ffffff 40%, #ffffff 60%, #d362a4 60%, #d362a4 80%, #a30262 80%, #a30262 100%) !important;
+		background-size: 100% !important;;
+		background-position: 0% !important;;
+	}
+	.text-gradient {
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	}
+	.instructions {
+		line-height: 1.6;
+		margin: 1rem 0;
+		border: 1px solid rgba(var(--accent), 25%);
+		background-color: #1a1a1a;
+		padding: 1rem;
+		border-radius: 0.4rem;
+	}
+	.instructions code {
+		font-size: 0.875em;
+		font-weight: bold;
+		background: rgba(var(--accent), 12%);
+		color: rgb(var(--accent));
+		border-radius: 4px;
+		padding: 0.3em 0.45em;
+	}
+	.instructions strong {
+		color: rgb(var(--accent));
+	}
+	.link-card-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+		gap: 1rem;
+		padding: 0;
+	}
+</style>
