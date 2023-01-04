@@ -1,14 +1,16 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import MailLink from '../components/MailLink.astro';
 ---
 
 <Layout title="Vivian, The Enby Witch">
 	<main>
 		<h1><span class="text-gradient">Vivian</span>, The Enby Witch</h1>
-		<subtitle>The Interdisciplinary <span class="lesbian text-gradient">Lesbian</span></subtitle>
+		<subtitle>The Interdisciplinary <span class="lesbian text-gradient">Lesbian</span> <span class="pronouns">[she/fae/they]</span></subtitle>
 		<p class="instructions">
-			I'm an Unreal Engine game developer. I specialize in First Person Animation, but I am also a bit of a UE generalist.
+			Hi! I'm a Polish Unreal Engine game developer. I specialize in First Person Animation, but I am also a bit of a UE generalist.<br/><br/>
+			Email me at <a href={`mailto:vivi.the@enbywit.ch`} class="text-gradient">vivi.the@enbywit.ch</a>
 		</p>
 		<h3>Projects I've worked on</h3>
 		<ul role="list" class="link-card-grid">
@@ -20,25 +22,33 @@ import Card from '../components/Card.astro';
 			<Card
 				href="https://reikongames.com/"
 				title="Final Form"
-				body="I've worked on this project at Reikon Games from 2019 to 2022. I've worked on the first person animations and implemented them into the Unreal Engine."
+				body="I've worked on this project at Reikon Games from 2019 to 2022. I've worked on the first person animations and I've worked with the animation blueprints in Unreal Engine."
 			/>
-			<!--<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
+		</ul>
+		<h3>Mod projects I've worked on</h3>
+		<ul role="list" class="link-card-grid">
+			<Card
+				href="https://steamcommunity.com/sharedfiles/filedetails/?id=1532706684"
+				title="Infinite's Boss Rush (2018)"
+				body="A Call of Duty: Black Ops 3 mod. I've researched the camera format used in BO3 and took part in making the first custom made cinematic in the game."
 			/>
 			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
+				href="https://mega.nz/file/WAcRkbJB#nfT5wbNzcTBcJUO88mLEPmjSK92MkMPJwDdsuP3Y8wg"
+				title="Mindshare (2018)"
+				body="A Call of Duty: Black Ops 1 mod. I've researched the vehicle mechanics and I've also made a cinematic animation for it."
+			>
+			<p>There used to be a forum post but the forum has since closed, and there's no archived version of it.</p>
+			</Card>
 			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
-			/>-->
+				href="https://www.ugx-mods.com/forum/mod-releases/121/bo1-project-thor-ascension-gameplay-mod/10953/"
+				title="Project Thor (2016)"
+				body="A Call of Duty: Black Ops 1 mod. I've made a few animation sets for this mod."
+			/>
 		</ul>
 	</main>
+	<footer>
+		
+	</footer>
 </Layout>
 
 <style>
@@ -46,6 +56,10 @@ import Card from '../components/Card.astro';
 		margin: auto;
 		padding: 1.5rem;
 		max-width: 60ch;
+	}
+	footer {
+		display: flex;
+		justify-content: center;
 	}
 	h1 {
 		font-size: 3rem;
@@ -56,6 +70,9 @@ import Card from '../components/Card.astro';
 		color: #aaa;
 		font-weight: 800;
 	}
+	.pronouns {
+		font-weight: normal;
+	}
 	.lesbian {
 		background-image: linear-gradient(45deg, #d52d00 0%, #d52d00 20%, #ff9a56 20%, #ff9a56 40%, #ffffff 40%, #ffffff 60%, #d362a4 60%, #d362a4 80%, #a30262 80%, #a30262 100%) !important;
 		background-size: 100% !important;;
@@ -65,7 +82,7 @@ import Card from '../components/Card.astro';
 		background-image: var(--accent-gradient);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
-		background-size: 400%;
+		background-size: 300%;
 		background-position: 0%;
 	}
 	.instructions {

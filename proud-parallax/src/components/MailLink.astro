@@ -1,0 +1,8 @@
+---
+export interface Props {
+	mail: string;
+}
+
+const { mail } = Astro.props;
+---
+<a href={`mailto:${mail}`}>{mail}</a>
