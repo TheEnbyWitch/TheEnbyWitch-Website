@@ -11,35 +11,6 @@ const baseCoverUrl = `${baseUrl}${defaultCover}`
 
 const { title } = Astro.props;
 ---
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<meta name="description" content={description} />
-		<meta name="keywords" content="vivi, website, now" />
-		<meta name="twitter:description" content={description} />
-		<!--<meta name="twitter:image:alt" content={title} />
-		<meta name="twitter:image" content={`${baseUrl}${cover}`} />
-		<meta name="twitter:title" content={title} />-->
-		<meta name="viewport" content="initial-scale=1.0, width=device-width" />
-		<meta property="og:description" content={description} />
-		<!--<meta property="og:image:height" content="630" />
-		<meta property="og:image:width" content="1200" />
-		<meta property="og:image" content={`${baseUrl}${cover}`} />-->
-		<meta property="og:title" content={title} />
-		<meta property="og:type" content="website" />
-		<meta property="og:url" content={`${baseUrl}`} />
-		<title>{title}</title>
-	</head>
-	<body>
-        <div class="container">
-            <h1 class="terminal-prompt">Vivi's /now Page</h1>
-            <slot />
-        </div>
-	</body>
-</html>
 
 <style>
 :root {
@@ -96,6 +67,7 @@ const { title } = Astro.props;
   h6,
   .logo {
     line-height: var(--global-line-height);
+    text-transform: lowercase;
   }
   
   a {
@@ -142,6 +114,7 @@ const { title } = Astro.props;
     float: none;
     margin: 0;
     padding: 0;
+
   }
   
   blockquote,
@@ -1037,3 +1010,33 @@ const { title } = Astro.props;
   }
   
 </style>
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<meta name="description" content={description} />
+		<meta name="keywords" content="vivi, website, now" />
+		<meta name="twitter:description" content={description} />
+		<!--<meta name="twitter:image:alt" content={title} />
+		<meta name="twitter:image" content={`${baseUrl}${cover}`} />
+		<meta name="twitter:title" content={title} />-->
+		<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+		<meta property="og:description" content={description} />
+		<!--<meta property="og:image:height" content="630" />
+		<meta property="og:image:width" content="1200" />
+		<meta property="og:image" content={`${baseUrl}${cover}`} />-->
+		<meta property="og:title" content={title} />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content={`${baseUrl}`} />
+		<title>{title}</title>
+	</head>
+	<body>
+        <div class="container">
+            <h1 class="terminal-prompt">vivi's /now page</h1>
+            <slot />
+        </div>
+	</body>
+</html>
