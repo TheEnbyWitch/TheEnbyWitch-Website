@@ -1,18 +1,41 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
-import MailLink from '../components/MailLink.astro';
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import MailLink from "../components/MailLink.astro";
 ---
 
 <Layout title="Vivian, The Enby Witch">
 	<main>
 		<h1><span class="text-gradient">Vivian</span>, The Enby Witch</h1>
-		<subtitle>The Interdisciplinary <span class="lesbian text-gradient">Lesbian</span> <span class="pronouns">[she/fae/they]</span></subtitle>
+		<subtitle
+			>The Interdisciplinary <span class="lesbian text-gradient"
+				>Lesbian</span
+			>
+			<span class="pronouns">[she/fae/they]</span>
+		</subtitle>
 		<p class="instructions">
-			Hi! I'm a Polish Unreal Engine game developer. I specialize in First Person Animation, but I am also a bit of a UE generalist.<br/><br/>
-			Find me on <a class="text-gradient" rel="me" href="https://peoplemaking.games/@TheEnbyWitch">Mastodon</a>, <a class="text-gradient" rel="me" href="https://blog.enbywit.ch">Tumblr</a> or <a class="text-gradient" rel="me" href="https://cohost.org/TheEnbyWitch">Cohost</a><br/>
-			Email me at <a class="text-gradient" href="&#109;&#x61;&#x69;&#108;&#x74;&#111;&#58;&#118;&#105;&#118;&#105;&#46;&#116;&#104;&#101;&#64;&#101;&#x6e;&#x62;&#121;&#119;&#x69;&#x74;&#46;&#99;&#x68;">&#118;&#105;&#118;&#105;&#46;&#116;&#104;&#101;&#64;&#101;&#x6e;&#x62;&#121;&#119;&#x69;&#x74;&#46;&#99;&#x68;</a><br/>
-			See what I'm up to on my <a class="text-gradient" href="/now">/now</a> page
+			Hi! I'm a Polish Unreal Engine game developer. I specialize in First
+			Person Animation, but I am also a bit of a UE generalist.<br /><br
+			/>
+			Find me on <a
+				class="text-gradient"
+				rel="me"
+				href="https://peoplemaking.games/@TheEnbyWitch">Mastodon</a
+			>, <a class="text-gradient" rel="me" href="https://blog.enbywit.ch"
+				>Tumblr</a
+			> or <a
+				class="text-gradient"
+				rel="me"
+				href="https://cohost.org/TheEnbyWitch">Cohost</a
+			><br />
+			Email me at <a
+				class="text-gradient"
+				href="mailto:vivi.the@enbywit.ch"
+				>&#118;&#105;&#118;&#105;&#46;&#116;&#104;&#101;&#64;&#101;&#x6e;&#x62;&#121;&#119;&#x69;&#x74;&#46;&#99;&#x68;</a
+			><br />
+			{
+				/*See what I'm up to on my <a class="text-gradient" href="/now">/now</a> page*/
+			}
 		</p>
 		<h2>Unreal Engine Plugins</h2>
 		<ul role="list" class="link-card-grid">
@@ -35,10 +58,10 @@ import MailLink from '../components/MailLink.astro';
 		<h2>Projects I've worked on</h2>
 		<ul role="list" class="link-card-grid">
 			<Card
-				href="https://www.splashdamage.com/"
-				title="Unannounced SD Game"
+				href="https://press.splashdamage.com/Project-Astrid"
+				title="Project Astrid"
 				bgImage="url(/img/sd.jpg)"
-				body="I've been at Splash Damage since September 2022 working as an Animation Programmer. My role is to implement animations in Unreal and make them work within the game."
+				body="I've been at Splash Damage since September 2022 working as an Animation Programmer on Project Astrid. My role is to implement animations in Unreal and make them work within the game."
 			/>
 			<Card
 				href="https://reikongames.com/"
@@ -60,8 +83,7 @@ import MailLink from '../components/MailLink.astro';
 				title="Mindshare (2018)"
 				bgImage="url(/img/mindshare_op.jpg)"
 				body="A Call of Duty: Black Ops 1 mod. I've researched the vehicle mechanics and I've also made a cinematic animation for it."
-			>
-			</Card>
+			/>
 			<Card
 				href="https://www.ugx-mods.com/forum/mod-releases/121/bo1-project-thor-ascension-gameplay-mod/10953/"
 				title="Project Thor (2016)"
@@ -70,9 +92,7 @@ import MailLink from '../components/MailLink.astro';
 			/>
 		</ul>
 	</main>
-	<footer>
-		
-	</footer>
+	<footer></footer>
 </Layout>
 
 <style>
@@ -98,9 +118,21 @@ import MailLink from '../components/MailLink.astro';
 		font-weight: normal;
 	}
 	.lesbian {
-		background-image: linear-gradient(45deg, #d52d00 0%, #d52d00 20%, #ff9a56 20%, #ff9a56 40%, #ffffff 40%, #ffffff 60%, #d362a4 60%, #d362a4 80%, #a30262 80%, #a30262 100%) !important;
-		background-size: 100% !important;;
-		background-position: 0% !important;;
+		background-image: linear-gradient(
+			45deg,
+			#d52d00 0%,
+			#d52d00 20%,
+			#ff9a56 20%,
+			#ff9a56 40%,
+			#ffffff 40%,
+			#ffffff 60%,
+			#d362a4 60%,
+			#d362a4 80%,
+			#a30262 80%,
+			#a30262 100%
+		) !important;
+		background-size: 100% !important;
+		background-position: 0% !important;
 	}
 	.text-gradient {
 		background-image: var(--accent-gradient);
