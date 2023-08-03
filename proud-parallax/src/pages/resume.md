@@ -28,7 +28,7 @@ I enjoy building unique interactive experiences for both the web and video games
 
 - Astro
 - React
-- Svelte
+- Svelte & SvelteKit
 - Next.js
 - Cypress
 
@@ -51,6 +51,10 @@ I used to work on first person animations for Final Form. My work involved creat
 I have done some C# Programming and machine learning-related stuff in Unity to do real-time facial animations based on the webcam stream using dlib, with networking support. I have also created a tool to help build a database for training a model in C++.
 
 ## Other Projects
+
+### Parakeet
+
+Parakeet is a work-in-progress game analytics tool with a focus on privacy that I'm creating using SvelteKit and PocketBase. It's main goal is to provide indie game developers with an easily deployable analytics service that can be used to obtain valuable data while in development.
 
 ### Website for Topstomatologia
 
