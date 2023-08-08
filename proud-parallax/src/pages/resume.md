@@ -67,4 +67,4 @@ For documentation, visit: https://docs.amb.enbywit.ch/
 
 ### Boreal Alyph (2017-2021)
 
-On the Half-Life fan game project, Boreal Alyph, I worked on graphics programming and first-person animation.. In addition, I managed a TeamCity server for compiling assets, building, and uploading the game to Steam, ensuring efficient project delivery.
+On the Half-Life fan game project, Boreal Alyph, I worked on graphics programming and first-person animation. In addition, I managed a TeamCity server for compiling assets, building, and uploading the game to Steam, ensuring efficient project delivery.
