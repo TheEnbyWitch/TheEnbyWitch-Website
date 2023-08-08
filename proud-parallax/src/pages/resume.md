@@ -52,10 +52,6 @@ I have done some C# Programming and machine learning-related stuff in Unity to d
 
 ## Other Projects
 
-### Parakeet
-
-Parakeet is a work-in-progress game analytics tool with a focus on privacy that I'm creating using SvelteKit and PocketBase. It's main goal is to provide indie game developers with an easily deployable analytics service that can be used to obtain valuable data while in development.
-
 ### Website for Topstomatologia
 
 I designed a professional website for Topstomatologia, a dental hygienist. The site was developed utilizing Astro and React, and deployed using Netlify.
