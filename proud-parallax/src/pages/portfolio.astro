@@ -1,0 +1,320 @@
+---
+import Position from "../components/portfolio/Position.astro";
+import Link from "../components/portfolio/Link.astro";
+---
+
+<html>
+  <head>
+    <title>Luna Vivian Zaremba - Portfolio</title>
+  </head>
+  <body>
+    <main>
+      <h1>Luna Vivian Zaremba</h1>
+      <h2>Portfolio</h2>
+      <center style="margin-bottom: 2em"
+        ><div class="img-frame">
+          <img src="/img/profile_portfolio_crop.webp" /><div
+            class="img-overlay"
+          >
+          </div>
+        </div>
+      </center>
+      <p style="text-align:center">
+        <a href="mailto:mail@vivi.lol">mail@vivi.lol</a> | <a
+          href="https://vivi.the.enbywit.ch/">vivi.the.enbywit.ch</a
+        >
+      </p>
+      <div>
+        <h3>Summary</h3>
+        <p style="font-weight:300;">
+          Vivian is an experienced Unreal Engine Generalist. Her experience
+          covers a wide variety of skills, such as Technical Animation, Tool
+          Programming, Gameplay Design, Technical Art and 3D Animation. She's
+          proficient with Blueprints, Animation Blueprints, Control Rig, HLSL,
+          Unreal C++ and C#, and knows her way around the Unreal Editor, Blender
+          and Autodesk Maya.
+          <br /><br />
+          Outside of Game Development, Vivian is also a skilled Frontend Engineer,
+          with experience in Astro, React, Svelte, Next.js and Go.
+          <br /><br />
+          When she's not working on games or websites, she enjoys listening to Haken
+          and Linkin Park, and she enjoys playing indie games and 3D Platformers.
+        </p>
+      </div>
+      <div>
+        <h3>Software</h3>
+        <ul style="font-weight:300;">
+          <li>Unreal Engine - 5 years of experience</li>
+          <li>Unity - 10 years of experience</li>
+          <li>Blender - 4 years of experience</li>
+          <li>Autodesk Maya - 11 years of experience</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Work Experience</h3>
+        <Position
+          companyName="girlfriend.games"
+          position="Lead Developer"
+          date="2024-Present"
+          project="Paula The Possum"
+          href="https://girlfriend.games/"
+        >
+          <p>
+            Leading development on a 3D Platformer "Paula The Possum" made in
+            Unreal Engine 5 for PC and Nintendo Switch that is looking for
+            funding. Working on Gameplay, 3D Animation, Level Design, Tool
+            Programming, UI Programming and Narrative Tools.
+          </p>
+          <p>
+            Also working on a game telemetry solution for indies using Go and
+            Pocketbase for the backend.
+          </p>
+        </Position>
+        <Position
+          companyName="Veelpoot"
+          position="First Person Animator Contractor"
+          date="2024-Present"
+          project="BRUTALISK"
+          href="https://veelpoot.com/"
+        >
+          <p>
+            "BRUTALISK" is an Unreal Engine 5 FPS looking for funding. I was
+            responsible for creating a First Person Animation pipeline inside
+            Unreal using Control Rig and new Sequencer features to enable
+            animation asset creation directly in-engine, using in-game assets,
+            with an in-game environment context.
+          </p>
+          <p>
+            <Link href="https://www.youtube.com/watch?v=VKcl_78hIMg"
+              >Prototype Showcase</Link
+            >
+          </p>
+        </Position>
+        <Position
+          companyName="Folded Fox"
+          position="Character Pipeline & UI Programmer Contractor"
+          date="2023-Present"
+          href="https://foldedfox.games/"
+        >
+          <p>
+            Worked on an Unreal Engine 5 Tactics game prototype. I was
+            responsible for designing and implementing a workflow for rigging
+            and implementing character models in Blender and Unreal. I was also
+            responsible for UI code responsible for demo builds and loading
+            screens.
+          </p>
+        </Position>
+        <Position
+          companyName="Splash Damage"
+          position="Animation Programmer"
+          date="2022-2023"
+          project="Project Astrid"
+          href="https://splashdamage.com/"
+        >
+          <p>
+            "Project Astrid" is an open-world survival game in Unreal Engine 5.
+            I was responsible for in-game animation implementation and behavior.
+          </p>
+        </Position>
+        <Position
+          companyName="Reikon Games"
+          position="Lead First Person Animator"
+          date="2019-2022"
+          project="Final Form"
+          href="https://reikongames.com/"
+        >
+          <p>
+            "Final Form" is a co-op FPS in Unreal Engine 4&5. I was responsible
+            for all first person animations and their implementation inside
+            Unreal, made animation rigs in Maya, and made materials and shaders
+            inside Unreal.
+          </p>
+          <p>
+            <Link href="https://www.youtube.com/watch?v=i0dwSQLMcTk"
+              >Teaser Trailer</Link
+            >
+          </p>
+        </Position>
+        <Position
+          companyName="Bossa Studios"
+          position="Intern Programmer"
+          date="2019"
+          href="https://www.bossastudios.com/"
+        >
+          <p>
+            Researched and prototyped a real-time webcam-based facial animation
+            system in Unity for potential use in a multiplayer game.
+          </p>
+        </Position>
+      </div>
+      <div>
+        <h3>Other Projects</h3>
+        <Position
+          companyName="BUG BALL"
+          position='"Made the Bug Model"'
+          date="2024"
+          href="https://dapper-dinosaur.itch.io/bug-ball"
+        >
+          <p>
+            Bug Racing game made in Godot for the PIGSquad Summer Slow Jam in
+            August 2024
+          </p>
+          <p>
+            Created the character mesh in Blender and implemented it in-game.
+          </p>
+        </Position>
+        <Position
+          companyName="Industry Plant"
+          position="Technical Artist"
+          date="2024"
+          href="https://ryankoning.itch.io/industry-plant"
+        >
+          <p>
+            Band Management game made in Godot for the PIGSquad Summer Slow Jam
+            in July 2024
+          </p><p>
+            Worked on the UI code and the Character rendering. The game can
+            support many unique characters.
+          </p>
+        </Position>
+        <Position
+          companyName="Clara's Cauldron Conundrum"
+          position="Technical Artist"
+          date="2024"
+          href="https://ryankoning.itch.io/claras-cauldron-conundrum"
+        >
+          <p>
+            Potion Brewing game made in Unity for the PIGSquad Summer Slow Jam
+            in June 2024
+          </p>
+          <p>
+            Created and animated the main character in Blender using art drawn
+            by our 2D Artist. Set up a level design pipeline in Unity using
+            LDtk. Created the environment meshes using textures provided by the
+            2D Artist. Wrote and implemented dialogue using Yarn Spinner.
+          </p>
+        </Position>
+        <Position
+          companyName="Topstomatologia"
+          position="Frontend Engineer"
+          date="2023"
+          href="https://topstomatologia.pl/"
+        >
+          <p>
+            Re-designed and developed a completely new version of the website
+            for a dental office in Poznan, Poland with the aim of keeping load
+            times small and improving the flow for contacting the office for
+            appointments.
+          </p>
+          <p>
+            The technologies used were Astro and React, unit testing is done
+            using Cypress, and the website was deployed via Netlify.
+          </p>
+        </Position>
+        <Position
+          companyName="Infinite's Boss Rush"
+          position="Technical Animator"
+          date="2018"
+          href="https://tateplayer.codes/projects/bossrush"
+        >
+          <p>
+            "Infinite's Boss Rush" was a multiplayer gamemode for Call of Duty:
+            Black Ops III released in 2018.
+          </p>
+          <p>
+            Researched the camera format used in BO3, created a custom exporter
+            for camera animations for Maya using Python, and took part in making
+            the first fully custom mod cinematic in the game.
+          </p>
+        </Position>
+        <Position
+          companyName="Mindshare"
+          position="First Person Animator"
+          date="2018"
+          href="https://tateplayer.codes/projects/mindshare"
+        >
+          <p>
+            "Mindshare" was a mod for Call of Duty: Black Ops released in 2018.
+          </p>
+          <p>
+            Researched the vehicle mechanics, and created a cinematic animation
+            that played when the players completed the first phase of the main
+            quest.
+          </p>
+        </Position>
+        <Position
+          companyName="Project Thor"
+          position="First Person Animator"
+          date="2016"
+          href="https://www.ugx-mods.com/forum/mod-releases/121/bo1-project-thor-ascension-gameplay-mod/10953/"
+        >
+          <p>
+            "Project Thor" was a mod for Call of Duty: Black Ops released in
+            2016.
+          </p>
+          <p>Created animation sets for multiple weapons in this mod.</p>
+        </Position>
+      </div>
+    </main>
+  </body>
+</html>
+
+<style is:global>
+  html {
+    font-family: Bahnschrift, "DIN Alternate", "Franklin Gothic Medium",
+      "Nimbus Sans Narrow", sans-serif-condensed, sans-serif;
+    font-weight: normal;
+  }
+  div:not(.img-frame):not(.img-overlay) {
+    padding: 0.5em 1em;
+    margin: 0.5em;
+    border: 1px dashed black;
+    border-radius: 1em;
+  }
+  h1,
+  h2,
+  h3 {
+    text-align: center;
+  }
+
+  p {
+    font-weight: 300;
+  }
+
+  .img-frame {
+    border-radius: 9999999px;
+    position: relative;
+    width: 16em;
+    height: 16em;
+    display: block;
+    border: 2px solid rgba(0, 0, 0, 0.25);
+  }
+
+  .img-frame > img {
+    border-radius: 9999999px;
+    position: relative;
+    width: 16em;
+    height: 16em;
+    display: block;
+    box-shadow: 0 0px 15px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+  }
+
+  .img-overlay {
+    border-radius: 9999999px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    box-shadow: 5px 12px 20px -5px inset rgba(255, 255, 255, 0.568),
+      -5px -6px 20px -5px inset rgba(0, 0, 0, 0.308);
+    z-index: 20;
+  }
+
+  main {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+</style>
