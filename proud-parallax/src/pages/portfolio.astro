@@ -19,7 +19,7 @@ import Link from "../components/portfolio/Link.astro";
           </div>
         </div>
       </center>
-      <p style="text-align:center">
+      <p style="text-align:center" class="self-links">
         <a href="mailto:mail@vivi.lol">mail@vivi.lol</a> | <a
           href="https://vivi.the.enbywit.ch/">vivi.the.enbywit.ch</a
         >
@@ -27,7 +27,7 @@ import Link from "../components/portfolio/Link.astro";
       <div>
         <h3>Summary</h3>
         <p style="font-weight:300;">
-          Vivian is an experienced Unreal Engine Generalist. Her experience
+          Vivian is a talented Unreal Engine Generalist. Her experience
           covers a wide variety of skills, such as Technical Animation, Tool
           Programming, Gameplay Design, Technical Art and 3D Animation. She's
           proficient with Blueprints, Animation Blueprints, Control Rig, HLSL,
@@ -45,25 +45,35 @@ import Link from "../components/portfolio/Link.astro";
         <h3>Highlights</h3>
         <ul style="font-weight:300;">
           <li>
-            Final Form (TBA, REIKON GAMES) - <a
-              href="https://www.youtube.com/watch?v=i0dwSQLMcTk"
-              >Teaser Trailer (announced at Summer Games Fest 2021)</a
-            >
+            Final Form (TBA, REIKON GAMES)<ul>
+              <li>
+                <Link href="https://www.youtube.com/watch?v=i0dwSQLMcTk"
+                  >Teaser Trailer (announced at Summer Games Fest 2021)</Link>
+              </li>
+            </ul>
           </li>
           <li>
-            BRUTALISK (TBA, Veelpoot) - <a
-              href="https://www.youtube.com/watch?v=VKcl_78hIMg"
-              >Prototype Showcase</a
-            >
+            BRUTALISK (TBA, Veelpoot)<ul>
+              <li>
+                <Link href="https://www.youtube.com/watch?v=VKcl_78hIMg"
+                  >Prototype Showcase</Link>
+              </li>
+            </ul>
           </li>
           <li>
-            Game Jam Projects (2024): <a
-              href="https://dapper-dinosaur.itch.io/bug-ball">BUG BALL</a
-            >, <a href="https://ryankoning.itch.io/industry-plant"
-              >Industry Plant</a
-            >, <a href="https://ryankoning.itch.io/claras-cauldron-conundrum"
-              >Clara's Cauldron Conundrum</a
-            >
+            Game Jam Projects (2024)<ul>
+              <li>
+                <Link href="https://dapper-dinosaur.itch.io/bug-ball"
+                  >BUG BALL</Link>
+              </li><li>
+                <Link href="https://ryankoning.itch.io/industry-plant"
+                  >Industry Plant</Link>
+              </li><li>
+                <Link
+                  href="https://ryankoning.itch.io/claras-cauldron-conundrum"
+                  >Clara's Cauldron Conundrum</Link>
+              </li>
+            </ul>
           </li>
         </ul>
       </div>
@@ -110,11 +120,13 @@ import Link from "../components/portfolio/Link.astro";
             animation asset creation directly in-engine, using in-game assets,
             with an in-game environment context.
           </p>
-          <p>
+          <ul>
+            <li>
             <Link href="https://www.youtube.com/watch?v=VKcl_78hIMg"
               >Prototype Showcase</Link
             >
-          </p>
+            </li>
+          </ul>
         </Position>
         <Position
           companyName="Folded Fox"
@@ -155,11 +167,12 @@ import Link from "../components/portfolio/Link.astro";
             Unreal, made animation rigs in Maya, and made materials and shaders
             inside Unreal.
           </p>
-          <p>
+          <ul>
+            <li>
             <Link href="https://www.youtube.com/watch?v=i0dwSQLMcTk"
-              >Teaser Trailer</Link
-            >
-          </p>
+              >Teaser Trailer (announced at Summer Games Fest 2021)</Link
+            ></li>
+          </ul>
         </Position>
         <Position
           companyName="Bossa Studios"
@@ -188,6 +201,13 @@ import Link from "../components/portfolio/Link.astro";
           <p>
             Created the character mesh in Blender and implemented it in-game.
           </p>
+          <ul>
+            <li>
+            <Link href="https://dapper-dinosaur.itch.io/bug-ball"
+              >Itch.io Page</Link
+            >
+            </li>
+          </ul>
         </Position>
         <Position
           companyName="Industry Plant"
@@ -202,6 +222,13 @@ import Link from "../components/portfolio/Link.astro";
             Worked on the UI code and the Character rendering. The game can
             support many unique characters.
           </p>
+          <ul>
+            <li>
+            <Link href="https://ryankoning.itch.io/industry-plant"
+              >Itch.io Page</Link
+            >
+            </li>
+          </ul>
         </Position>
         <Position
           companyName="Clara's Cauldron Conundrum"
@@ -219,6 +246,13 @@ import Link from "../components/portfolio/Link.astro";
             LDtk. Created the environment meshes using textures provided by the
             2D Artist. Wrote and implemented dialogue using Yarn Spinner.
           </p>
+          <ul>
+            <li>
+            <Link href="https://ryankoning.itch.io/claras-cauldron-conundrum"
+              >Itch.io Page</Link
+            >
+            </li>
+          </ul>
         </Position>
         <Position
           companyName="Topstomatologia"
@@ -236,6 +270,13 @@ import Link from "../components/portfolio/Link.astro";
             The technologies used were Astro and React, unit testing is done
             using Cypress, and the website was deployed via Netlify.
           </p>
+          <ul>
+            <li>
+            <Link href="https://topstomatologia.pl/"
+              >Website</Link
+            >
+            </li>
+          </ul>
         </Position>
         <Position
           companyName="Infinite's Boss Rush"
@@ -252,6 +293,18 @@ import Link from "../components/portfolio/Link.astro";
             for camera animations for Maya using Python, and took part in making
             the first fully custom mod cinematic in the game.
           </p>
+          <ul>
+            <li>
+            <Link href="https://steamcommunity.com/sharedfiles/filedetails/?id=1532706684"
+              >Steam Workshop Page</Link
+            >
+            </li>
+            <li>
+            <Link href="https://www.youtube.com/watch?v=io_geMEyhek"
+              >Trailer</Link
+            >
+            </li>
+          </ul>
         </Position>
         <Position
           companyName="Mindshare"
@@ -267,6 +320,13 @@ import Link from "../components/portfolio/Link.astro";
             that played when the players completed the first phase of the main
             quest.
           </p>
+          <ul>
+            <li>
+            <Link href="https://www.youtube.com/watch?v=jNZ_DUbaCZI"
+              >Trailer (download link is in description)</Link
+            >
+            </li>
+          </ul>
         </Position>
         <Position
           companyName="Project Thor"
@@ -279,6 +339,13 @@ import Link from "../components/portfolio/Link.astro";
             2016.
           </p>
           <p>Created animation sets for multiple weapons in this mod.</p>
+          <ul>
+            <li>
+            <Link href="https://www.youtube.com/watch?v=wrOgphJzQAg"
+              >Trailer (download link is in description)</Link
+            >
+            </li>
+          </ul>
         </Position>
       </div>
     </main>
@@ -342,5 +409,21 @@ import Link from "../components/portfolio/Link.astro";
   main {
     max-width: 768px;
     margin: 0 auto;
+  }
+  .print-only {
+    display: none;
+  }
+  @media print {
+    main {
+      max-width: 100%;
+      margin: 0;
+    }
+    .self-links a {
+      color: blue !important;
+      text-decoration: none;
+    }
+    .print-only {
+      display:inline;
+    }
   }
 </style>

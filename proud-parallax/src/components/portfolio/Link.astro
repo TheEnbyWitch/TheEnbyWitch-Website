@@ -6,4 +6,23 @@ export interface Props {
 const { href } = Astro.props;
 ---
 
-<a {href}><slot /></a>
+<a {href}><slot /><span> - <span>{href}</span></span></a>
+
+<style>
+  span {
+    display: none;
+  }
+  @media print {
+    span {
+      display: inline;
+    }
+    span > span {
+      color: blue;
+    }
+    a {
+      color: black;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+  }
+</style>

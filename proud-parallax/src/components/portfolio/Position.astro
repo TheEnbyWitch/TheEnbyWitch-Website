@@ -35,7 +35,19 @@ const { companyName, position, date, project, href } = Astro.props;
     font-weight: 400;
   }
 
-  div :global(p) {
+  div :global(p) :global(li) {
     font-weight: 300;
+  }
+  div :global(li) {
+    font-weight: 300;
+  }
+  @media print {
+    span {
+      display: inline;
+    }
+    a {
+      color: blue;
+      text-decoration: none;
+    }
   }
 </style>
