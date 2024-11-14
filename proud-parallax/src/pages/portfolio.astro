@@ -45,6 +45,10 @@ import Link from "../components/portfolio/Link.astro";
         <h3>Highlights</h3>
         <ul style="font-weight:300;">
           <li>
+            <Link href="https://www.youtube.com/watch?v=Sg-Hl4TFkiE"
+                  >First Person Animation Reel</Link>
+          </li>
+          <li>
             Final Form (TBA, REIKON GAMES)<ul>
               <li>
                 <Link href="https://www.youtube.com/watch?v=ICpRrXOrqSE"
@@ -279,6 +283,26 @@ import Link from "../components/portfolio/Link.astro";
           </ul>
         </Position>
         <Position
+          companyName="Boreal Alyph"
+          position="Programmer & First Person Animator"
+          date="2017-2021"
+          href="https://www.youtube.com/watch?v=2p6K6M9UPCE"
+        >
+          <p>
+            "Boreal Alyph" was a mod project for Half-Life 2: Episode 2.
+          </p>
+          <p>
+            Responsible for all first person animations and graphics programming. Implemented a Deferred PBR renderer using DirectX 9 in the Source Engine.
+          </p>
+          <ul>
+            <li>
+            <Link href="https://www.youtube.com/watch?v=2p6K6M9UPCE"
+              >Gameplay Showcase</Link
+            >
+            </li>
+          </ul>
+        </Position>
+        <Position
           companyName="Infinite's Boss Rush"
           position="Technical Animator"
           date="2018"
@@ -414,9 +438,15 @@ import Link from "../components/portfolio/Link.astro";
     display: none;
   }
   @media print {
+    body {
+      width: 900px;
+    }
     main {
       max-width: 100%;
       margin: 0;
+    }
+    main > div {
+      break-inside: avoid;
     }
     .self-links a {
       color: blue !important;
