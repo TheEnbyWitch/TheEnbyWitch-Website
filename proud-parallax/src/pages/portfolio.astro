@@ -27,12 +27,12 @@ import Link from "../components/portfolio/Link.astro";
       <div>
         <h3>Summary</h3>
         <p style="font-weight:300;">
-          Vivian is a talented Unreal Engine Technical Designer. Her experience covers a
-          wide variety of skills, such as Technical Animation, Tool Programming,
-          Gameplay Design, Technical Art and 3D Animation. She's proficient with
-          Blueprints, Animation Blueprints, Control Rig, HLSL, Unreal C++ and
-          C#, and knows her way around the Unreal Editor, Blender and Autodesk
-          Maya.
+          Vivian is a talented Unreal Engine Technical Designer. Her experience
+          covers a wide variety of skills, such as Technical Animation, Tool
+          Programming, Gameplay Design, Technical Art and 3D Animation. She's
+          proficient with Blueprints, Animation Blueprints, Control Rig, HLSL,
+          Unreal C++ and C#, and knows her way around the Unreal Editor, Blender
+          and Autodesk Maya.
           <br /><br />
           Outside of Game Development, Vivian is also a skilled Frontend Engineer,
           with experience in Astro, React, Svelte, Next.js and Go.
@@ -47,6 +47,12 @@ import Link from "../components/portfolio/Link.astro";
           <li>
             <Link href="https://www.youtube.com/watch?v=Sg-Hl4TFkiE"
               >First Person Animation Reel</Link
+            >
+          </li>
+          <li>
+            <Link
+              href="https://theenbywitch.itch.io/paula-the-possum/devlog/846863/pigsquad-finish-your-game-jam-2024-devlog"
+              >Paula The Possum - Devlog</Link
             >
           </li>
           <li>
@@ -115,6 +121,14 @@ import Link from "../components/portfolio/Link.astro";
             Also working on a game telemetry solution for indies using Go and
             Pocketbase for the backend.
           </p>
+          <ul>
+            <li>
+              <Link
+                href="https://theenbywitch.itch.io/paula-the-possum/devlog/846863/pigsquad-finish-your-game-jam-2024-devlog"
+                >Devlog</Link
+              >
+            </li>
+          </ul>
         </Position>
         <Position
           companyName="Veelpoot"
@@ -181,7 +195,8 @@ import Link from "../components/portfolio/Link.astro";
           <ul>
             <li>
               <Link href="https://www.youtube.com/watch?v=ICpRrXOrqSE"
-                >Teaser Trailer (announced at Summer Games Fest 2021)</Link>
+                >Teaser Trailer (announced at Summer Games Fest 2021)</Link
+              >
             </li>
           </ul>
         </Position>
@@ -431,7 +446,8 @@ import Link from "../components/portfolio/Link.astro";
     pointer-events: none;
     width: 100%;
     height: 100%;
-    box-shadow: 5px 12px 20px -5px inset rgba(255, 255, 255, 0.568),
+    box-shadow:
+      5px 12px 20px -5px inset rgba(255, 255, 255, 0.568),
       -5px -6px 20px -5px inset rgba(0, 0, 0, 0.308);
     z-index: 20;
   }
@@ -445,7 +461,7 @@ import Link from "../components/portfolio/Link.astro";
   }
   @media print {
     body {
-      width: 900px;
+      width: 950px;
     }
     main {
       max-width: 100%;
