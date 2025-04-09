@@ -1,210 +1,493 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
-import MailLink from "../components/MailLink.astro";
+import Position from "../components/portfolio/Position.astro";
+import Link from "../components/portfolio/Link.astro";
 ---
 
-<Layout title="Vivian, The Enby Witch">
-  <main>
-    <h1><span class="text-gradient">Vivian</span>, The Enby Witch</h1>
-    <subtitle
-      >The Interdisciplinary <span class="lesbian text-gradient">Lesbian</span>
-      <span class="pronouns">[she/fae/they]</span>
-    </subtitle>
-    <p class="instructions">
-      Hi! I'm a developer from Poland, living in Portland, OR. I specialize in
-      First Person Animation, Animation Blueprints and Control Rig in Unreal
-      Engine. I also like developing tools for the engine!<br />
-      Check out my <a
-        class="text-gradient"
-        href="https://blog.of.the.enbywit.ch/blog/custom-dialogue-nodes-slate-flowgraph/"
-        >post on creating a custom look for your dialogue nodes in Flow Graph
-        using Slate!</a
-      >
-      <br /><br />
-      I also do frontend development using Astro, Next.js, React and Svelte. This
-      site you're looking at was made with Astro!
-      <br /><br />
-      Check out my <a class="text-gradient" target="_blank" href="/portfolio"
-        >portfolio here</a
-      >
-      <br /><br />
-      Check out some of my work on <a
-        class="text-gradient"
-        rel="me"
-        href="https://www.youtube.com/channel/UCDhOSQtT97hVPl0b4lnIyjg"
-        >YouTube</a
-      ><br />
-      Find me on <a
-        class="text-gradient"
-        rel="me"
-        href="https://peoplemaking.games/@TheEnbyWitch">Mastodon</a
-      >.<br />
-      Email me at <a class="text-gradient" href="mailto:mail@vivi.lol"
-        >mail@vivi.lol</a
-      > or if you want to hire me for something, <a
-        class="text-gradient"
-        href="mailto:hire.me@enbywit.ch">hire.me@enbywit.ch</a
-      ><br />
-      {
-        /*See what I'm up to on my <a class="text-gradient" href="/now">/now</a> page*/
-      }
-    </p>
-    <h2>Unreal Engine Plugins</h2>
-    <ul role="list" class="link-card-grid">
-      <Card
-        href="https://theenbywitch.itch.io/ue-umg-editor-toolbars"
-        title="UMG Editor Toolbars"
-        bgImage="url(/img/umgtoolbar_op.jpg)"
-        body="Create custom toolbar widgets completely in editor without touching C++! (Paid)"
-      />
-      <Card
-        href="https://github.com/TheEnbyWitch/ImGuiBlueprint"
-        title="ImGuiBlueprint"
-        bgImage="url(/img/imguibp.jpg)"
-        body="Access ImGui from Blueprint using convenient nodes! (Open Source)"
-      />
-      <Card
-        href="https://amb.enbywit.ch/"
-        title="Accumulation-based Motion Blur"
-        bgImage="url(/img/amb.jpg)"
-        body="A tried-and-tested post process effect, popular in the 2000s games, now available in Unreal! (Paid)"
-      />
-    </ul>
-    <h2>Open Source Projects</h2>
-    <ul role="list" class="link-card-grid">
-      <Card
-        href="https://github.com/TheEnbyWitch/LunarViewer"
-        title="LunarViewer"
-        bgImage="url(/img/lunarviewer.jpg)"
-        body="A hardware-accelerated model viewer for Quake 1 and Hexen 2 with a focus on accurate representation."
-      />
-    </ul>
-    <h2>Projects I've worked on</h2>
-    <ul role="list" class="link-card-grid">
-      <Card
-        href="https://ryankoning.itch.io/claras-cauldron-conundrum"
-        title="Clara's Cauldron Conundrum"
-        bgImage="url(/img/clara.jpg)"
-        body="A game made in 2 weeks in Unity for the PIGSquad June Summer Slow Jam 2024 where you craft potions. I was a Technical Artist on the project."
-      />
-      <Card
-        href="https://press.splashdamage.com/Project-Astrid"
-        title="Project Astrid"
-        bgImage="url(/img/sd.jpg)"
-        body="I've worked on this project at Splash Damage from 2022 to 2023 as an Animation Programmer. My role was to work on the player animation blueprint and control rigs."
-      />
-      <Card
-        href="https://reikongames.com/"
-        title="Final Form"
-        bgImage="url(/img/finalform_op.jpg)"
-        body="I've worked on this project at Reikon Games from 2019 to 2022. I've worked on the first person animations and I've worked with the animation blueprints in Unreal Engine."
-      />
-    </ul>
-    <h2>Web Development</h2>
-    <ul role="list" class="link-card-grid">
-      <Card
-        href="https://topstomatologia.pl"
-        title="Topstomatologia"
-        bgImage="url(/img/topstom_op.webp)"
-        body="I've remade this website using Astro and Tailwind. I've also used Cypress for testing to make sure that everything still works, even after potential updates."
-      />
-    </ul>
-    <h2>Mod projects I've worked on</h2>
-    <ul role="list" class="link-card-grid">
-      <Card
-        href="https://tateplayer.codes/projects/bossrush"
-        title="Infinite's Boss Rush (2018)"
-        bgImage="url(/img/bossrush_op.jpg)"
-        body="A Call of Duty: Black Ops 3 mod. I've researched the camera format used in BO3 and took part in making the first custom made cinematic in the game."
-      />
-      <Card
-        href="https://tateplayer.codes/projects/mindshare"
-        title="Mindshare (2018)"
-        bgImage="url(/img/mindshare_op.jpg)"
-        body="A Call of Duty: Black Ops 1 mod. I've researched the vehicle mechanics and I've also made a cinematic animation for it."
-      />
-      <Card
-        href="https://www.ugx-mods.com/forum/mod-releases/121/bo1-project-thor-ascension-gameplay-mod/10953/"
-        title="Project Thor (2016)"
-        bgImage="url(/img/projectthor_op.jpg)"
-        body="A Call of Duty: Black Ops 1 mod. I've made a few animation sets for this mod."
-      />
-    </ul>
-  </main>
-  <footer></footer>
-</Layout>
+<html>
+  <head>
+    <title>Luna Vivian Zaremba - Portfolio</title>
+  </head>
+  <body>
+    <main>
+      <h1>Luna Vivian Zaremba</h1>
+      <h2>Portfolio</h2>
+      <center style="margin-bottom: 2em"
+        ><div class="img-frame">
+          <img src="/img/profile_portfolio_crop.webp" /><div
+            class="img-overlay"
+          >
+          </div>
+        </div>
+      </center>
+      <p style="text-align:center" class="self-links">
+        <a href="mailto:mail@vivi.lol">mail@vivi.lol</a> | <a
+          href="https://vivi.the.enbywit.ch/">vivi.the.enbywit.ch</a
+        >
+      </p>
+      <div>
+        <h3>Summary</h3>
+        <p style="font-weight:300;">
+          Vivian is a talented Unreal Engine Technical Designer. Her experience
+          covers a wide variety of skills, such as Technical Animation, Tool
+          Programming, Gameplay Design, Technical Art and 3D Animation. She's
+          proficient with Blueprints, Animation Blueprints, Control Rig, HLSL,
+          Unreal C++ and C#, and knows her way around the Unreal Editor, Blender
+          and Autodesk Maya.
+          <br /><br />
+          Outside of Game Development, Vivian is also a skilled Frontend Engineer,
+          with experience in Astro, React, Svelte, Next.js and Go.
+          <br /><br />
+          When she's not working on games or websites, she enjoys writing, listening
+          to Haken and Linkin Park, and she enjoys playing indie games and 3D Platformers.
+        </p>
+      </div>
+      <div>
+        <h3>Highlights</h3>
+        <ul style="font-weight:300;">
+          <li>
+            <Link href="https://metaleden.com/">METAL EDEN (May 2025, REIKON GAMES, demo available)</Link><ul>
+              <li>
+                <Link href="https://www.youtube.com/watch?v=s_nAwi4kQNQ"
+                  >Reveal Trailer (announced at PlayStation State of Play 2025)</Link
+                >
+              </li>
+              <li>
+                <Link href="https://store.steampowered.com/app/3468980/METAL_EDEN__Demo/">
+                  Play the Demo on Steam
+                </Link>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <Link href="https://www.youtube.com/watch?v=Sg-Hl4TFkiE"
+              >First Person Animation Reel</Link
+            >
+          </li>
+          <li>
+            <Link
+              href="https://theenbywitch.itch.io/paula-the-possum/devlog/846863/pigsquad-finish-your-game-jam-2024-devlog"
+              >Paula The Possum - Devlog</Link
+            >
+          </li>
+          <li>
+            BRUTALISK (TBA, Veelpoot)<ul>
+              <li>
+                <Link href="https://www.youtube.com/watch?v=VKcl_78hIMg"
+                  >Prototype Showcase</Link
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            Game Jam Projects (2024)<ul>
+              <li>
+                <Link href="https://dapper-dinosaur.itch.io/bug-ball"
+                  >BUG BALL</Link
+                >
+              </li><li>
+                <Link href="https://ryankoning.itch.io/industry-plant"
+                  >Industry Plant</Link
+                >
+              </li><li>
+                <Link
+                  href="https://ryankoning.itch.io/claras-cauldron-conundrum"
+                  >Clara's Cauldron Conundrum</Link
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3>Software</h3>
+        <ul style="font-weight:300;">
+          <li>Unreal Engine - 5 years of experience</li>
+          <li>Unity - 10 years of experience</li>
+          <li>Blender - 4 years of experience</li>
+          <li>Autodesk Maya - 11 years of experience</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Work Experience</h3>
+        <Position
+          companyName="girlfriend.games"
+          position="Lead Developer"
+          date="2024-Present"
+          project="Paula The Possum"
+          href="https://girlfriend.games/"
+        >
+          <p>
+            Leading a small volunteer developer team on a 3D Platformer "Paula
+            The Possum" made in Unreal Engine 5 for PC and Nintendo Switch that
+            is looking for funding. Working on Gameplay, 3D Animation, Level
+            Design, Tool Programming, UI Programming and Narrative Tools.
+          </p>
+          <p>
+            I've built custom tools and systems to empower the designers as much
+            as possible, making it easy to create new mechanics and maintain
+            existing ones. The systems I programmed include: a custom gameplay
+            ability system (lighter than GAS), a combo graph on top of the
+            ability system, a dialogue system based on SUDS (with support for
+            animating camera shots and characters), and a Source Engine style
+            I/O scripting system. I'm also self-hosting a Horde server to
+            provide precompiled binaries and packaged builds for developers. You
+            can check out the devlog below for more.
+          </p>
+          <ul>
+            <li>
+              <Link
+                href="https://theenbywitch.itch.io/paula-the-possum/devlog/846863/pigsquad-finish-your-game-jam-2024-devlog"
+                >Devlog</Link
+              >
+            </li>
+          </ul>
+        </Position>
+        <Position
+          companyName="Veelpoot"
+          position="Technical Designer"
+          date="2024-Present"
+          project="BRUTALISK"
+          href="https://veelpoot.com/"
+        >
+          <p>
+            "BRUTALISK" is an Unreal Engine 5 FPS looking for funding. I was
+            responsible for creating a First Person Animation pipeline inside
+            Unreal using Control Rig and new Sequencer features to enable
+            animation asset creation directly in-engine, using in-game assets,
+            with an in-game environment context. I'm also responsible for design
+            and implementation of gameplay mechanics and systems.
+          </p>
+          <ul>
+            <li>
+              <Link href="https://www.youtube.com/watch?v=VKcl_78hIMg"
+                >Prototype Showcase</Link
+              >
+            </li>
+          </ul>
+        </Position>
+        <Position
+          companyName="Folded Fox"
+          position="Character Pipeline & UI Programmer Contractor"
+          date="2023-2024"
+          href="https://foldedfox.games/"
+        >
+          <p>
+            Worked on an Unreal Engine 5 Tactics game prototype. I was
+            responsible for designing and implementing a workflow for rigging
+            and implementing character models in Blender and Unreal. I was also
+            responsible for UI code responsible for demo builds and loading
+            screens.
+          </p>
+        </Position>
+        <Position
+          companyName="Splash Damage"
+          position="Animation Programmer"
+          date="2022-2023"
+          project="Project Astrid"
+          href="https://splashdamage.com/"
+        >
+          <p>
+            "Project Astrid" is an open-world survival game in Unreal Engine 5.
+            I was responsible for in-game animation implementation and behavior.
+          </p>
+        </Position>
+        <Position
+          companyName="REIKON GAMES"
+          position="Lead First Person Animator"
+          date="2019-2022"
+          project="METAL EDEN"
+          href="https://metaleden.com/"
+        >
+          <p>
+            "METAL EDEN" is a First Person Shooter, made in Unreal Engine 5. I
+            was responsible for all (at the time) first person animations and their
+            implementations inside Unreal. I've made animation rigs in Maya, rigged the left hand opening up (including the in-game implementation), and many, many more things. It had a trailer at Summer
+            Games Fest in 2021 and State of Play in 2025 and most of my work is still in the game.
+          </p>
+          <ul>
+            <li>
+              <Link href="https://www.youtube.com/watch?v=s_nAwi4kQNQ"
+                >Reveal Trailer (announced at PlayStation State of Play 2025)</Link
+              >
+            </li>
+          </ul>
+        </Position>
+        <Position
+          companyName="Bossa Studios"
+          position="Intern Programmer"
+          date="2019"
+          href="https://www.bossastudios.com/"
+        >
+          <p>
+            Researched and prototyped a real-time webcam-based facial animation
+            system in Unity.
+          </p>
+        </Position>
+      </div>
+      <div>
+        <h3>Other Projects</h3>
+        <Position
+          companyName="BUG BALL"
+          position='"Made the Bug Model"'
+          date="2024"
+          href="https://dapper-dinosaur.itch.io/bug-ball"
+        >
+          <p>
+            Bug Racing game made in Godot for the PIGSquad Summer Slow Jam in
+            August 2024
+          </p>
+          <p>
+            Created the character mesh in Blender and implemented it in-game.
+          </p>
+          <ul>
+            <li>
+              <Link href="https://dapper-dinosaur.itch.io/bug-ball"
+                >Itch.io Page</Link
+              >
+            </li>
+          </ul>
+        </Position>
+        <Position
+          companyName="Industry Plant"
+          position="Technical Artist"
+          date="2024"
+          href="https://ryankoning.itch.io/industry-plant"
+        >
+          <p>
+            Band Management game made in Godot for the PIGSquad Summer Slow Jam
+            in July 2024
+          </p><p>
+            Worked on the UI code and the Character rendering. The game can
+            support many unique characters.
+          </p>
+          <ul>
+            <li>
+              <Link href="https://ryankoning.itch.io/industry-plant"
+                >Itch.io Page</Link
+              >
+            </li>
+          </ul>
+        </Position>
+        <Position
+          companyName="Clara's Cauldron Conundrum"
+          position="Technical Artist"
+          date="2024"
+          href="https://ryankoning.itch.io/claras-cauldron-conundrum"
+        >
+          <p>
+            Potion Brewing game made in Unity for the PIGSquad Summer Slow Jam
+            in June 2024
+          </p>
+          <p>
+            Created and animated the main character in Blender using art drawn
+            by our 2D Artist. Set up a level design pipeline in Unity using
+            LDtk. Created the environment meshes using textures provided by the
+            2D Artist. Wrote and implemented dialogue using Yarn Spinner.
+          </p>
+          <ul>
+            <li>
+              <Link href="https://ryankoning.itch.io/claras-cauldron-conundrum"
+                >Itch.io Page</Link
+              >
+            </li>
+          </ul>
+        </Position>
+        <Position
+          companyName="Topstomatologia"
+          position="Frontend Engineer"
+          date="2023"
+          href="https://topstomatologia.pl/"
+        >
+          <p>
+            Re-designed and developed a completely new version of the website
+            for a dental office in Poznan, Poland with the aim of keeping load
+            times small and improving the flow for contacting the office for
+            appointments.
+          </p>
+          <p>
+            The technologies used were Astro and React, unit testing is done
+            using Cypress, and the website was deployed via Netlify.
+          </p>
+          <ul>
+            <li>
+              <Link href="https://topstomatologia.pl/">Website</Link>
+            </li>
+          </ul>
+        </Position>
+        <Position
+          companyName="Boreal Alyph"
+          position="Programmer & First Person Animator"
+          date="2017-2021"
+          href="https://www.youtube.com/watch?v=2p6K6M9UPCE"
+        >
+          <p>"Boreal Alyph" was a mod project for Half-Life 2: Episode 2.</p>
+          <p>
+            Responsible for all first person animations and graphics
+            programming. Implemented a Deferred PBR renderer using DirectX 9 in
+            the Source Engine.
+          </p>
+          <ul>
+            <li>
+              <Link href="https://www.youtube.com/watch?v=2p6K6M9UPCE"
+                >Gameplay Showcase</Link
+              >
+            </li>
+          </ul>
+        </Position>
+        <Position
+          companyName="Infinite's Boss Rush"
+          position="Technical Animator"
+          date="2018"
+          href="https://tateplayer.codes/projects/bossrush"
+        >
+          <p>
+            "Infinite's Boss Rush" was a multiplayer gamemode for Call of Duty:
+            Black Ops III released in 2018.
+          </p>
+          <p>
+            Researched the camera format used in BO3, created a custom exporter
+            for camera animations for Maya using Python, and took part in making
+            the first fully custom mod cinematic in the game.
+          </p>
+          <ul>
+            <li>
+              <Link
+                href="https://steamcommunity.com/sharedfiles/filedetails/?id=1532706684"
+                >Steam Workshop Page</Link
+              >
+            </li>
+            <li>
+              <Link href="https://www.youtube.com/watch?v=io_geMEyhek"
+                >Trailer</Link
+              >
+            </li>
+          </ul>
+        </Position>
+        <Position
+          companyName="Mindshare"
+          position="First Person Animator"
+          date="2018"
+          href="https://tateplayer.codes/projects/mindshare"
+        >
+          <p>
+            "Mindshare" was a mod for Call of Duty: Black Ops released in 2018.
+          </p>
+          <p>
+            Researched the vehicle mechanics, and created a cinematic animation
+            that played when the players completed the first phase of the main
+            quest.
+          </p>
+          <ul>
+            <li>
+              <Link href="https://www.youtube.com/watch?v=jNZ_DUbaCZI"
+                >Trailer (download link is in description)</Link
+              >
+            </li>
+          </ul>
+        </Position>
+        <Position
+          companyName="Project Thor"
+          position="First Person Animator"
+          date="2016"
+          href="https://www.ugx-mods.com/forum/mod-releases/121/bo1-project-thor-ascension-gameplay-mod/10953/"
+        >
+          <p>
+            "Project Thor" was a mod for Call of Duty: Black Ops released in
+            2016.
+          </p>
+          <p>Created animation sets for multiple weapons in this mod.</p>
+          <ul>
+            <li>
+              <Link href="https://www.youtube.com/watch?v=wrOgphJzQAg"
+                >Trailer (download link is in description)</Link
+              >
+            </li>
+          </ul>
+        </Position>
+      </div>
+    </main>
+  </body>
+</html>
 
-<style>
-  main {
-    margin: auto;
-    padding: 1.5rem;
-    max-width: 60ch;
-  }
-  footer {
-    display: flex;
-    justify-content: center;
-  }
-  h1 {
-    font-size: 3rem;
-    font-weight: 800;
-    margin: 0;
-  }
-  subtitle {
-    color: #aaa;
-    font-weight: 800;
-  }
-  .pronouns {
+<style is:global>
+  html {
+    font-family: Bahnschrift, "DIN Alternate", "Franklin Gothic Medium",
+      "Nimbus Sans Narrow", sans-serif-condensed, sans-serif;
     font-weight: normal;
   }
-  .lesbian {
-    background-image: linear-gradient(
-      45deg,
-      #d52d00 0%,
-      #d52d00 20%,
-      #ff9a56 20%,
-      #ff9a56 40%,
-      #ffffff 40%,
-      #ffffff 60%,
-      #d362a4 60%,
-      #d362a4 80%,
-      #a30262 80%,
-      #a30262 100%
-    ) !important;
-    background-size: 100% !important;
-    background-position: 0% !important;
+  div:not(.img-frame):not(.img-overlay) {
+    padding: 0.5em 1em;
+    margin: 0.5em;
+    border: 1px dashed black;
+    border-radius: 1em;
   }
-  .text-gradient {
-    background-image: var(--accent-gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 300%;
-    background-position: 0%;
-    text-decoration: none;
+  h1,
+  h2,
+  h3 {
+    text-align: center;
   }
-  .instructions {
-    line-height: 1.6;
-    margin: 1rem 0;
-    border: 1px solid rgba(var(--accent), 25%);
-    background-color: #1a1a1a;
-    padding: 1rem;
-    border-radius: 0.4rem;
+
+  p {
+    font-weight: 300;
   }
-  .instructions code {
-    font-size: 0.875em;
-    font-weight: bold;
-    background: rgba(var(--accent), 12%);
-    color: rgb(var(--accent));
-    border-radius: 4px;
-    padding: 0.3em 0.45em;
+
+  .img-frame {
+    border-radius: 9999999px;
+    position: relative;
+    width: 16em;
+    height: 16em;
+    display: block;
+    border: 2px solid rgba(0, 0, 0, 0.25);
   }
-  .instructions strong {
-    color: rgb(var(--accent));
+
+  .img-frame > img {
+    border-radius: 9999999px;
+    position: relative;
+    width: 16em;
+    height: 16em;
+    display: block;
+    box-shadow: 0 0px 15px rgba(0, 0, 0, 0.5);
+    z-index: 10;
   }
-  .link-card-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-    gap: 1rem;
-    padding: 0;
+
+  .img-overlay {
+    border-radius: 9999999px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    box-shadow:
+      5px 12px 20px -5px inset rgba(255, 255, 255, 0.568),
+      -5px -6px 20px -5px inset rgba(0, 0, 0, 0.308);
+    z-index: 20;
+  }
+
+  main {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+  .print-only {
+    display: none;
+  }
+  @media print {
+    body {
+      width: 950px;
+    }
+    main {
+      max-width: 100%;
+      margin: 0;
+    }
+    main > div {
+      break-inside: avoid;
+    }
+    .self-links a {
+      color: blue !important;
+      text-decoration: none;
+    }
+    .print-only {
+      display: inline;
+    }
   }
 </style>
