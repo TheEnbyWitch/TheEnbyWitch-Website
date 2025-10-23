@@ -44,8 +44,11 @@ import Link from "../components/portfolio/Link.astro";
       <div>
         <h3>Highlights</h3>
         <ul style="font-weight:300;">
-             <li>
-            <Link href="https://store.steampowered.com/app/3539440/Metal_Garden/">Metal Garden (2025, Tinerasoft)</Link><ul>
+          <li>
+            <Link
+              href="https://store.steampowered.com/app/3539440/Metal_Garden/"
+              >Metal Garden (2025, Tinerasoft)</Link
+            ><ul>
               <li>
                 <Link href="https://youtu.be/EoEzbmwXAiA"
                   >Animation Update Preview Video</Link
@@ -54,16 +57,20 @@ import Link from "../components/portfolio/Link.astro";
             </ul>
           </li>
           <li>
-            <Link href="https://metaleden.com/">METAL EDEN (Q3 2025, REIKON GAMES, demo available)</Link><ul>
+            <Link href="https://metaleden.com/"
+              >METAL EDEN (2025, REIKON GAMES, demo available)</Link
+            ><ul>
+              <li>
+                <Link
+                  href="https://store.steampowered.com/app/990380/METAL_EDEN/"
+                >
+                  Play on Steam
+                </Link>
+              </li>
               <li>
                 <Link href="https://www.youtube.com/watch?v=s_nAwi4kQNQ"
                   >Reveal Trailer (announced at PlayStation State of Play 2025)</Link
                 >
-              </li>
-              <li>
-                <Link href="https://store.steampowered.com/app/3468980/METAL_EDEN__Demo/">
-                  Play the Demo on Steam
-                </Link>
               </li>
             </ul>
           </li>
@@ -119,34 +126,6 @@ import Link from "../components/portfolio/Link.astro";
       <div>
         <h3>Work Experience</h3>
         <Position
-          companyName="Tinerasoft"
-          position="Technical Designer"
-          date="2025"
-          project="Metal Garden"
-          href="https://store.steampowered.com/app/3539440/Metal_Garden/"
-        >
-          <p>
-            "Metal Garden" is an Unreal Engine 5 FPS available on Steam. I've made new First Person animations in Blender for a post-release update and I'm also researching a potential Nintendo Switch port.
-          </p>
-          <ul>
-            <li>
-              <Link href="https://youtu.be/EoEzbmwXAiA"
-                >Animation Update Preview Video</Link
-              >
-            </li>
-          </ul>
-        </Position>
-        <Position
-          companyName="p:ear"
-          position="Volunteer Game Programming Coach"
-          date="2025"
-          href="https://www.pearmentor.org/"
-        >
-          <p>
-            Volunteered as a coach on Wired Wednesdays, teaching homeless youth how to code games in Godot across 5 classes.
-          </p>
-        </Position>
-        <Position
           companyName="girlfriend.games"
           position="Lead Developer"
           date="2024-Present"
@@ -168,7 +147,7 @@ import Link from "../components/portfolio/Link.astro";
             animating camera shots and characters), and a Source Engine style
             I/O scripting system. I'm also self-hosting a Horde server to
             provide precompiled binaries and packaged builds for developers. You
-            can check out the devlog below for more.
+            can check out the devlog (from November 2024).
           </p>
           <ul>
             <li>
@@ -178,6 +157,37 @@ import Link from "../components/portfolio/Link.astro";
               >
             </li>
           </ul>
+        </Position>
+        <Position
+          companyName="Tinerasoft"
+          position="Technical Designer"
+          date="2025"
+          project="Metal Garden"
+          href="https://store.steampowered.com/app/3539440/Metal_Garden/"
+        >
+          <p>
+            "Metal Garden" is an Unreal Engine 5 FPS available on Steam. I've
+            made new First Person animations in Blender for a post-release
+            update and I'm also researching a potential Nintendo Switch port.
+          </p>
+          <ul>
+            <li>
+              <Link href="https://youtu.be/EoEzbmwXAiA"
+                >Animation Update Preview Video</Link
+              >
+            </li>
+          </ul>
+        </Position>
+        <Position
+          companyName="p:ear"
+          position="Volunteer Game Programming Coach"
+          date="2025"
+          href="https://www.pearmentor.org/"
+        >
+          <p>
+            Volunteered as a coach on Wired Wednesdays, teaching homeless youth
+            how to code games in Godot across 5 classes.
+          </p>
         </Position>
         <Position
           companyName="Veelpoot"
@@ -233,13 +243,16 @@ import Link from "../components/portfolio/Link.astro";
           position="Lead First Person Animator"
           date="2019-2022"
           project="METAL EDEN"
-          href="https://metaleden.com/"
+          href="https://store.steampowered.com/app/990380/METAL_EDEN/"
         >
           <p>
             "METAL EDEN" is a First Person Shooter, made in Unreal Engine 5. I
-            was responsible for all (at the time) first person animations and their
-            implementations inside Unreal. I've made animation rigs in Maya, rigged the left hand opening up (including the in-game implementation), and many, many more things. It had a trailer at Summer
-            Games Fest in 2021 and State of Play in 2025 and most of my work is still in the game.
+            was responsible for all (at the time) first person animations and
+            their implementations inside Unreal. I've made animation rigs in
+            Maya, rigged the left hand opening up (including the in-game
+            implementation), and many, many more things. It had a trailer at
+            Summer Games Fest in 2021 and State of Play in 2025 and most of my
+            work is still in the game.
           </p>
           <ul>
             <li>
