@@ -46,6 +46,12 @@ import Link from "../components/portfolio/Link.astro";
         <ul style="font-weight:300;">
           <li>
             <Link
+              href="https://store.steampowered.com/app/4153760/BOLD_Networked_Newt_Action/"
+              >BOLD: Networked Newt Action (2026)</Link
+            >
+          </li>
+          <li>
+            <Link
               href="https://store.steampowered.com/app/3539440/Metal_Garden/"
               >Metal Garden (2025, Tinerasoft)</Link
             ><ul>
@@ -117,26 +123,26 @@ import Link from "../components/portfolio/Link.astro";
       <div>
         <h3>Software</h3>
         <ul style="font-weight:300;">
-          <li>Unreal Engine - 5 years of experience</li>
-          <li>Unity - 10 years of experience</li>
-          <li>Blender - 4 years of experience</li>
-          <li>Autodesk Maya - 11 years of experience</li>
+          <li>Unreal Engine - 7 years of experience</li>
+          <li>Unity - 11 years of experience</li>
+          <li>Blender - 6 years of experience</li>
+          <li>Autodesk Maya - 13 years of experience</li>
         </ul>
       </div>
       <div>
         <h3>Work Experience</h3>
         <Position
           companyName="girlfriend.games"
-          position="Lead Developer"
+          position="Creative Director"
           date="2024-Present"
           project="Paula The Possum"
           href="https://girlfriend.games/"
         >
           <p>
-            Leading a small volunteer developer team on a 3D Platformer "Paula
-            The Possum" made in Unreal Engine 5 for PC and Nintendo Switch that
-            is looking for funding. Working on Gameplay, 3D Animation, Level
-            Design, Tool Programming, UI Programming and Narrative Tools.
+            Leading a small volunteer developer team on a 3D Adventure
+            Platformer "Paula The Possum" made in Unreal Engine 5 for PC and
+            Nintendo Switch. Aside from directing the game, I'm also responsible
+            for the gameplay framework and tooling that powers the game.
           </p>
           <p>
             I've built custom tools and systems to empower the designers as much
@@ -159,6 +165,29 @@ import Link from "../components/portfolio/Link.astro";
           </ul>
         </Position>
         <Position
+          companyName="L'Herosoft Technologies"
+          position="Programmer & Musician"
+          date="2025-Present"
+          project="BOLD: Networked Newt Action"
+          href="https://store.steampowered.com/app/4153760/BOLD_Networked_Newt_Action/"
+        >
+          <p>
+            Working on BOLD: Networked Newt Action, a self-funded asymmetrical
+            PvP Spies vs Mercs game due for release in October 2026. I am
+            responsible for the significant majority of networked gameplay code,
+            to ensure a fair experience regardless of the network quality. I've
+            also been composing music for the game and took on producing tasks to ensure we can ship in time.
+          </p>
+          <ul>
+            <li>
+              <Link
+                href="https://store.steampowered.com/app/4153760/BOLD_Networked_Newt_Action/"
+                >Steam Page</Link
+              >
+            </li>
+          </ul>
+        </Position>
+        <Position
           companyName="Tinerasoft"
           position="Technical Designer"
           date="2025"
@@ -168,7 +197,7 @@ import Link from "../components/portfolio/Link.astro";
           <p>
             "Metal Garden" is an Unreal Engine 5 FPS available on Steam. I've
             made new First Person animations in Blender for a post-release
-            update and I'm also researching a potential Nintendo Switch port.
+            update and I've contributed to the Nintendo Switch port.
           </p>
           <ul>
             <li>
@@ -461,7 +490,8 @@ import Link from "../components/portfolio/Link.astro";
 
 <style is:global>
   html {
-    font-family: Bahnschrift, "DIN Alternate", "Franklin Gothic Medium",
+    font-family:
+      Bahnschrift, "DIN Alternate", "Franklin Gothic Medium",
       "Nimbus Sans Narrow", sans-serif-condensed, sans-serif;
     font-weight: normal;
   }
